@@ -1,0 +1,155 @@
+use("pet_store")
+
+db.products.updateOne(
+  // query
+  {_id: 1},
+  // change => operators
+  {
+    $set: {
+      name: 'Change name',
+      price: 3000,
+    }
+  }
+)
+
+
+
+db.products.updateOne(
+  { _id: 1 },
+  {
+    $set: {
+      _id: 1,
+    title: "Collar para Perro",
+    price: 15.99,
+    description: "Collar resistente y ajustable para perros de todas las razas.",
+    category: "Accesorios",
+    image: "url_imagen_1.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 2 },
+  {
+    $set: {
+       _id: 2,
+    title: "Juguete para Gatos",
+    price: 8.99,
+    description: "Juguete interactivo con plumas para mantener entretenido a tu gato.",
+    category: "Juguetes",
+    image: "url_imagen_2.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 3 },
+  {
+    $set: {
+      _id: 3,
+    title: "Comida para Peces",
+    price: 12.49,
+    description: "Alimento balanceado para peces tropicales, enriquecido con nutrientes esenciales.",
+    category: "Alimentación",
+    image: "url_imagen_3.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 4 },
+  {
+    $set: {
+       _id: 4,
+    title: "Cama para Mascotas",
+    price: 29.99,
+    description: "Cama suave y cómoda para perros y gatos de todos los tamaños.",
+    category: "Camas",
+    image: "url_imagen_4.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 5 },
+  {
+    $set: {
+      _id: 5,
+    title: "Snacks para Perros",
+    price: 7.99,
+    description: "Deliciosos snacks naturales para premiar a tu perro durante el entrenamiento.",
+    category: "Snacks",
+    image: "url_imagen_5.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 6 },
+  {
+    $set: {
+      "_id": 6,
+    "title": "Transportadora para Gatos",
+    "price": 34.99,
+    "description": "Transportadora segura y cómoda para llevar a tu gato de manera segura.",
+    "category": "Accesorios",
+    "image": "url_imagen_6.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 7 },
+  {
+    $set: {
+       "_id": 7,
+    "title": "Hueso de Juguete para Perros",
+    "price": 9.99,
+    "description": "Hueso resistente para perros, ideal para fortalecer sus mandíbulas.",
+    "category": "Juguetes",
+    "image": "url_imagen_7.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 8 },
+  {
+    $set: {
+      "_id": 8,
+    "title": "Arena para Gatos",
+    "price": 18.49,
+    "description": "Arena aglomerante para gatos, controla los olores y facilita la limpieza.",
+    "category": "Cuidado de Gatos",
+    "image": "url_imagen_8.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 9 },
+  {
+    $set: {
+       "_id": 9,
+    "title": "Chaleco Salvavidas para Perros",
+    "price": 22.99,
+    "description": "Chaleco ajustable para mantener a salvo a tu perro durante actividades acuáticas.",
+    "category": "Seguridad",
+    "image": "url_imagen_9.jpg"
+    }
+  }
+)
+
+db.products.updateOne(
+  { _id: 10 },
+  {
+    $set: {
+      "_id": 10,
+    "title": "Comedero Automático para Mascotas",
+    "price": 45.99,
+    "description": "Dispensador automático de comida para mantener a tu mascota bien alimentada.",
+    "category": "Alimentación",
+    "image": "url_imagen_10.jpg"
+    }
+  }
+)
