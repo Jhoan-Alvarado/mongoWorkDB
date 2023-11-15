@@ -1,0 +1,168 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany([
+   {
+    _id: 1,
+    title: "Collar para Perro",
+    price: 15.99,
+    description: "Collar resistente y ajustable para perros de todas las razas.",
+    category: "Accesorios",
+    image: "url_imagen_1.jpg"
+  },
+  {
+    _id: 2,
+    title: "Juguete para Gatos",
+    price: 8.99,
+    description: "Juguete interactivo con plumas para mantener entretenido a tu gato.",
+    category: "Juguetes",
+    image: "url_imagen_2.jpg"
+  },
+  {
+    _id: 3,
+    title: "Comida para Peces",
+    price: 12.49,
+    description: "Alimento balanceado para peces tropicales, enriquecido con nutrientes esenciales.",
+    category: "Alimentación",
+    image: "url_imagen_3.jpg"
+  },
+  {
+    _id: 4,
+    title: "Cama para Mascotas",
+    price: 29.99,
+    description: "Cama suave y cómoda para perros y gatos de todos los tamaños.",
+    category: "Camas",
+    image: "url_imagen_4.jpg"
+  },
+  {
+    _id: 5,
+    title: "Snacks para Perros",
+    price: 7.99,
+    description: "Deliciosos snacks naturales para premiar a tu perro durante el entrenamiento.",
+    category: "Snacks",
+    image: "url_imagen_5.jpg"
+  },
+  {
+    "_id": 6,
+    "title": "Transportadora para Gatos",
+    "price": 34.99,
+    "description": "Transportadora segura y cómoda para llevar a tu gato de manera segura.",
+    "category": "Accesorios",
+    "image": "url_imagen_6.jpg"
+  },
+  {
+    "_id": 7,
+    "title": "Hueso de Juguete para Perros",
+    "price": 9.99,
+    "description": "Hueso resistente para perros, ideal para fortalecer sus mandíbulas.",
+    "category": "Juguetes",
+    "image": "url_imagen_7.jpg"
+  },
+  {
+    "_id": 8,
+    "title": "Arena para Gatos",
+    "price": 18.49,
+    "description": "Arena aglomerante para gatos, controla los olores y facilita la limpieza.",
+    "category": "Cuidado de Gatos",
+    "image": "url_imagen_8.jpg"
+  },
+  {
+    "_id": 9,
+    "title": "Chaleco Salvavidas para Perros",
+    "price": 22.99,
+    "description": "Chaleco ajustable para mantener a salvo a tu perro durante actividades acuáticas.",
+    "category": "Seguridad",
+    "image": "url_imagen_9.jpg"
+  },
+  {
+    "_id": 10,
+    "title": "Comedero Automático para Mascotas",
+    "price": 45.99,
+    "description": "Dispensador automático de comida para mantener a tu mascota bien alimentada.",
+    "category": "Alimentación",
+    "image": "url_imagen_10.jpg"
+  },
+  {
+    "_id": 11,
+    "title": "Cepillo para Gatos",
+    "price": 6.99,
+    "description": "Cepillo suave para el cuidado del pelaje de gatos, reduce la caída del pelo.",
+    "category": "Cuidado de Gatos",
+    "image": "url_imagen_11.jpg"
+  },
+  {
+    "_id": 12,
+    "title": "Rascador para Gatos",
+    "price": 27.99,
+    "description": "Rascador resistente con juguete colgante, ideal para el entretenimiento felino.",
+    "category": "Juguetes",
+    "image": "url_imagen_12.jpg"
+  },
+  {
+    "_id": 13,
+    "title": "Comida Húmeda para Perros",
+    "price": 14.49,
+    "description": "Paquete de comida húmeda con sabores variados para perros de todas las edades.",
+    "category": "Alimentación",
+    "image": "url_imagen_13.jpg"
+  },
+  {
+    "_id": 14,
+    "title": "Casita para Roedores",
+    "price": 19.99,
+    "description": "Casita acogedora para hamsters y otros roedores pequeños, fácil de limpiar.",
+    "category": "Hábitat",
+    "image": "url_imagen_14.jpg"
+  },
+  {
+    "_id": 15,
+    "title": "Arnés y Correa para Conejos",
+    "price": 12.99,
+    "description": "Arnés ajustable con correa para pasear a tu conejo de manera segura.",
+    "category": "Accesorios",
+    "image": "url_imagen_15.jpg"
+  },
+  {
+    "_id": 16,
+    "title": "Caja de Arena para Hamsters",
+    "price": 8.49,
+    "description": "Caja de arena para hamsters, fácil de usar y mantener limpia.",
+    "category": "Hábitat",
+    "image": "url_imagen_16.jpg"
+  },
+  {
+    "_id": 17,
+    "title": "Bol de Comida para Pájaros",
+    "price": 5.99,
+    "description": "Bol resistente para colocar la comida de tus pájaros, fácil de lavar.",
+    "category": "Alimentación",
+    "image": "url_imagen_17.jpg"
+  },
+  {
+    "_id": 18,
+    "title": "Juguete para Conejos",
+    "price": 7.49,
+    "description": "Juguete interactivo para conejos, promueve el ejercicio y la diversión.",
+    "category": "Juguetes",
+    "image": "url_imagen_18.jpg"
+  },
+  {
+    "_id": 19,
+    "title": "Comida para Reptiles",
+    "price": 11.99,
+    "description": "Alimento completo para reptiles, enriquecido con vitaminas y minerales.",
+    "category": "Alimentación",
+    "image": "url_imagen_19.jpg"
+  },
+  {
+    "_id": 20,
+    "title": "Cepillo para Perros",
+    "price": 9.49,
+    "description": "Cepillo de cerdas suaves para el cuidado del pelaje de perros, reduce los enredos.",
+    "category": "Cuidado de Perros",
+    "image": "url_imagen_20.jpg"
+  }
+])  
